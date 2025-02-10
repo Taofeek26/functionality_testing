@@ -14,7 +14,7 @@ function App() {
     "https://jsonplaceholder.typicode.com/users"
   );
   const [filters, setFilters] = useState<FilterParams>({});
-  const [selectedField, setSelectedField] = useState("KPIData_keyword"); // Default selected field
+  const [selectedField, setSelectedField] = useState("KPIData_keyword");
 
   const { data, isLoading, error, refetch } = useFetch<any[]>(
     endpoint,
@@ -31,17 +31,12 @@ function App() {
     const Id = formData.get("Id")?.toString();
     const UserId = formData.get("UserId")?.toString();
     const product = formData.get("product")?.toString();
-    const selectedKey = formData.get("selectedField")?.toString(); // Get the selected key
+    const selectedKey = formData.get("selectedField")?.toString();
 
     if (Id) newFilters.Id = Id;
     if (UserId) newFilters.UserId = UserId;
     if (product) newFilters.product = product;
-    if (selectedKey) setSelectedField(selectedKey); // Update selected field
-
-    console.log(Id);
-    console.log(UserId);
-    console.log(product);
-    console.log("Selected Field:", selectedKey);
+    if (selectedKey) setSelectedField(selectedKey);
 
     setEndpoint(newEndpoint);
     setFilters(newFilters);
@@ -67,73 +62,101 @@ function App() {
         </div>
 
         <form onSubmit={handleSubmit} className="mt-8 space-y-4">
+          {/* Endpoint Selection */}
           <div>
             <label
               htmlFor="endpoint"
               className="block text-sm font-medium text-gray-700"
             >
-              API Endpoint
+              Select Endpoint
             </label>
-            <input
-              type="url"
+            <select
               name="endpoint"
               id="endpoint"
               defaultValue={endpoint}
               className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-              placeholder="Enter API endpoint URL"
               required
-            />
+            >
+              <option value="https://s25qbaqr5d.execute-api.us-east-2.amazonaws.com/Dev/OrganicPages">
+                {" "}
+                https://s25qbaqr5d.execute-api.us-east-2.amazonaws.com/Dev/OrganicPages
+              </option>
+              <option value="https://s25qbaqr5d.execute-api.us-east-2.amazonaws.com/Dev/Keyword_Profile">
+                https://s25qbaqr5d.execute-api.us-east-2.amazonaws.com/Dev/Keyword_Profile
+              </option>
+              <option value="https://s25qbaqr5d.execute-api.us-east-2.amazonaws.com/Dev/technical_audit">
+                https://s25qbaqr5d.execute-api.us-east-2.amazonaws.com/Dev/technical_audit
+              </option>
+              <option value="3">Endpoint 3</option>
+              <option value="4">Endpoint 4</option>
+            </select>
           </div>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            {/* ID Selection */}
             <div>
               <label
-                htmlFor="id"
+                htmlFor="Id"
                 className="block text-sm font-medium text-gray-700"
               >
-                ID
+                Select ID
               </label>
-              <input
-                type="text"
+              <select
                 name="Id"
                 id="Id"
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                placeholder="Enter ID"
-                min="1"
-              />
+              >
+                <option value="">Dont Select any ID</option>
+                <option value="1">Dont Select any ID</option>
+                <option value="2">Dont Select any ID</option>
+                <option value="3">Dont Select any ID</option>
+                <option value="4">Dont Select any ID</option>
+              </select>
             </div>
+
+            {/* User ID Selection */}
             <div>
               <label
-                htmlFor="userId"
+                htmlFor="UserId"
                 className="block text-sm font-medium text-gray-700"
               >
-                User ID
+                Select User ID
               </label>
-              <input
-                type="text"
+              <select
                 name="UserId"
                 id="UserId"
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                placeholder="Enter User ID"
-                min="1"
-              />
+              >
+                <option value="Taofeek">Taofeek</option>
+                <option value="101">User ID 101</option>
+                <option value="102">User ID 102</option>
+                <option value="103">User ID 103</option>
+                <option value="104">User ID 104</option>
+              </select>
             </div>
+
+            {/* Product Selection */}
             <div>
               <label
-                htmlFor="userId"
+                htmlFor="product"
                 className="block text-sm font-medium text-gray-700"
               >
-                Product
+                Select Product
               </label>
-              <input
-                type="text"
+              <select
                 name="product"
                 id="product"
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                placeholder="Enter Product"
-                min="1"
-              />
+              >
+                <option value="Website Analysis">Website Analysis</option>
+                <option value="Technical Audit">Technical Audit</option>
+                <option value="ProductB">Product B</option>
+                <option value="ProductC">Product C</option>
+                <option value="ProductD">Product D</option>
+              </select>
             </div>
+
+            {/* Data Field Selection */}
             <div>
               <label
                 htmlFor="selectedField"
@@ -148,9 +171,11 @@ function App() {
                 onChange={(e) => setSelectedField(e.target.value)}
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
               >
-                <option value="KPIData_keyword">Keword Profile Function</option>
+                <option value="KPIData_keyword">
+                  Keyword Profile Function
+                </option>
                 <option value="KPIData_Traffic">
-                  Traffic By Country Fucntion
+                  Traffic By Country Function
                 </option>
                 <option value="KPIData_Backlinks">SERP Function</option>
                 <option value="KPIData_Backlinks2">Backlinks Function</option>
