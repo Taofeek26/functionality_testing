@@ -79,13 +79,16 @@ function App() {
             >
               <option value="https://s25qbaqr5d.execute-api.us-east-2.amazonaws.com/Dev/OrganicPages">
                 {" "}
-                https://s25qbaqr5d.execute-api.us-east-2.amazonaws.com/Dev/OrganicPages
+                https://s25qbaqr5d.execute-api.us-east-2.amazonaws.com/Dev/OrganicPages(Top
+                Pages Function)
               </option>
               <option value="https://s25qbaqr5d.execute-api.us-east-2.amazonaws.com/Dev/Keyword_Profile">
-                https://s25qbaqr5d.execute-api.us-east-2.amazonaws.com/Dev/Keyword_Profile
+                https://s25qbaqr5d.execute-api.us-east-2.amazonaws.com/Dev/Keyword_Profile(Keyword
+                Profile Function)
               </option>
               <option value="https://s25qbaqr5d.execute-api.us-east-2.amazonaws.com/Dev/technical_audit">
-                https://s25qbaqr5d.execute-api.us-east-2.amazonaws.com/Dev/technical_audit
+                https://s25qbaqr5d.execute-api.us-east-2.amazonaws.com/Dev/technical_audit(Custom
+                technical Audit)
               </option>
               <option value="3">Endpoint 3</option>
               <option value="4">Endpoint 4</option>
