@@ -90,6 +90,20 @@ function App() {
                 https://s25qbaqr5d.execute-api.us-east-2.amazonaws.com/Dev/technical_audit(Custom
                 technical Audit)
               </option>
+              <option value="https://s25qbaqr5d.execute-api.us-east-2.amazonaws.com/Dev/technical_audit">
+                https://s25qbaqr5d.execute-api.us-east-2.amazonaws.com/Dev/Backlinks_Profile2(Backlinks
+                Profile)
+              </option>
+              <option value="https://s25qbaqr5d.execute-api.us-east-2.amazonaws.com/Dev/technical_audit">
+                https://s25qbaqr5d.execute-api.us-east-2.amazonaws.com/Dev/Backlinks_Profile(SERP)
+              </option>
+              <option value="https://s25qbaqr5d.execute-api.us-east-2.amazonaws.com/Dev/technical_audit">
+                https://s25qbaqr5d.execute-api.us-east-2.amazonaws.com/Dev/top_competitors(Top
+                Competitors)
+              </option>
+              <option value="https://s25qbaqr5d.execute-api.us-east-2.amazonaws.com/Dev/technical_audit">
+                https://s25qbaqr5d.execute-api.us-east-2.amazonaws.com/Dev/Traffic_by_Country(Traffic_by_Country)
+              </option>
               <option value="3">Endpoint 3</option>
               <option value="4">Endpoint 4</option>
             </select>
