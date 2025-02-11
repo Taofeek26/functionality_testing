@@ -198,6 +198,8 @@ function App() {
                 <option value="KPIData_Backlinks2">Backlinks Function</option>
                 <option value="KPIData_TopPages">Top Pages</option>
                 <option value="KPIData_Audit">Custom Technical Audit</option>
+                <option value="KPIData_Competitors">Top Competitors</option>
+
                 <option value="other_field">Other Field</option>
               </select>
             </div>
