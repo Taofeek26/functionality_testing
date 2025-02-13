@@ -104,6 +104,17 @@ function App() {
               <option value="https://s25qbaqr5d.execute-api.us-east-2.amazonaws.com/Dev/Traffic_by_Country">
                 https://s25qbaqr5d.execute-api.us-east-2.amazonaws.com/Dev/Traffic_by_Country(Traffic_by_Country)
               </option>
+
+              <option value="https://5v82xiqowe.execute-api.us-east-2.amazonaws.com/Prod/identify ">
+                https://5v82xiqowe.execute-api.us-east-2.amazonaws.com/Prod/identify
+                (Content Audit)
+              </option>
+              <option value="https://s25qbaqr5d.execute-api.us-east-2.amazonaws.com/Dev/Traffic_by_Country">
+                https://s25qbaqr5d.execute-api.us-east-2.amazonaws.com/Dev/Traffic_by_Country(Traffic_by_Country)
+              </option>
+              <option value="https://s25qbaqr5d.execute-api.us-east-2.amazonaws.com/Dev/Traffic_by_Country">
+                https://s25qbaqr5d.execute-api.us-east-2.amazonaws.com/Dev/Traffic_by_Country(Traffic_by_Country)
+              </option>
               <option value="3">Endpoint 3</option>
               <option value="4">Endpoint 4</option>
             </select>
@@ -199,6 +210,7 @@ function App() {
                 <option value="KPIData_TopPages">Top Pages</option>
                 <option value="KPIData_Audit">Custom Technical Audit</option>
                 <option value="KPIData_Competitors">Top Competitors</option>
+                <option value="ContentAudit">Content Audit</option>
 
                 <option value="other_field">Other Field</option>
               </select>
