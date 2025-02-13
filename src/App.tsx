@@ -156,7 +156,7 @@ function App() {
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
               >
                 <option value="Taofeek">Taofeek</option>
-                <option value="101">User ID 101</option>
+                <option value="Godson">Godson</option>
                 <option value="102">User ID 102</option>
                 <option value="103">User ID 103</option>
                 <option value="104">User ID 104</option>
@@ -178,7 +178,7 @@ function App() {
               >
                 <option value="Website Analysis">Website Analysis</option>
                 <option value="Technical Audit">Technical Audit</option>
-                <option value="ProductB">Product B</option>
+                <option value="ContentAudit">ContentAudit</option>
                 <option value="ProductC">Product C</option>
                 <option value="ProductD">Product D</option>
               </select>
